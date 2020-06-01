@@ -29,20 +29,93 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
-
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief function to print array elements in a nice way 
  *
- * <Add Extended Description Here>
+ * @param unsigned char *arry : a pointer to the array you want to print.
+ * @param char len : number of elements of your array.
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @return None
  */
 
+void print_array(unsigned char *arry,char len);
+
+
+/**
+ * @brief function to swap two elements  
+ *
+ * @param unsigned char *a : a pointer to the first element you want to swap.
+ * @param unsigned char *b : a pointer to the second element you want to swap.
+ *
+ * @return None
+ */
+
+void swap(unsigned char *a, unsigned char *b);
+
+/**
+ * @brief function to Bubble sort array elements. 
+ *
+ * @param unsigned char *arry : a pointer to the array you want to sort.
+ * @param char len : number of elements of your array.
+ *
+ * @return None
+ */
+
+void sort(unsigned char *arry,char len);
+
+/**
+ * @brief function to get minimum value of array elements. 
+ *
+ * @param unsigned char *arry : a pointer to the array you want to process.
+ * @param char len : number of elements of your array.
+ *
+ * @return unsigned char min
+ */
+
+unsigned char find_minimum(unsigned char *arry,char len);
+
+/**
+ * @brief function to get maximum value of array elements. 
+ *
+ * @param unsigned char *arry : a pointer to the array you want to process.
+ * @param char len : number of elements of your array.
+ *
+ * @return unsigned char max
+ */
+
+unsigned char find_maximum(unsigned char *arry,char len);
+
+/**
+ * @brief function to get the mean value of array elements. 
+ *
+ * @param unsigned char *arry : a pointer to the array you want to process.
+ * @param char len : number of elements of your array.
+ *
+ * @return unsigned char mean
+ */
+
+unsigned char find_mean(unsigned char *arry,char len);
+
+/**
+ * @brief function to get the median value of array elements. 
+ *
+ * @param unsigned char *arry : a pointer to the array you want to process.
+ * @param char len : number of elements of your array.
+ *
+ * @return unsigned char median
+ */
+
+unsigned char find_median(unsigned char *arry,char len);
+
+/**
+ * @brief function to print min,max,mean,median elements of a given array in a nice way. 
+ *
+ * @param unsigned char *arry : a pointer to the array you want to process.
+ * @param char len : number of elements of your array.
+ *
+ * @return None
+ */
+
+void print_statistics(unsigned char *arry,char len);
 
 #endif /* __STATS_H__ */
