@@ -42,8 +42,16 @@ void main() {
                               200, 122, 150, 90,   92,  87, 177, 244,
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
- 
- print_statistics(test, SIZE);                 
+
+printf("Array before sorting: \n ");
+print_array(test, SIZE);
+
+sort(test, SIZE);
+
+printf("Array after sorting: \n ");
+print_array(test, SIZE);
+
+print_statistics(test, SIZE);                 
 
 }
 
