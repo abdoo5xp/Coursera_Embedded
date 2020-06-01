@@ -114,11 +114,11 @@ unsigned char find_maximum(unsigned char *arry,char len){
 
 unsigned char find_mean(unsigned char *arry,char len){
 	
-	unsigned char sum = 0;
+	int sum = 0;
 
 	for(char i = 0; i < len; i++)
 		sum += arry[i];
-	
+
 	return (sum/len);
 }
 
